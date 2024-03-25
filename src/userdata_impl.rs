@@ -42,7 +42,7 @@ pub struct UserDataRegistry<'lua, T: 'static> {
 }
 
 impl<'lua, T: 'static> UserDataRegistry<'lua, T> {
-    pub(crate) const fn new() -> Self {
+    pub const fn new() -> Self {
         UserDataRegistry {
             fields: Vec::new(),
             field_getters: Vec::new(),
